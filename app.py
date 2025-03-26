@@ -64,7 +64,7 @@ page = st.sidebar.radio(
 
 # Season Analysis
 if page == "🏆 Season Analysis":
-    st.image("winner.jpg", width=300,use_container_width=True)
+    st.image("IPL-winners-list-from-2008-to-2024-blog (1).png", width=300,use_container_width=True)
     st.title("🏆 IPL Season-Wise Analysis")
 
     season_winner_team = df.groupby('season').last()['match_winner'].reset_index()
@@ -80,7 +80,7 @@ if page == "🏆 Season Analysis":
 
 # Player Performance
 elif page == "📊 Player Performance":
-    st.image("D:\IPL 2008 to 2023\IPL-2020-player-performance-report-card-e1605804856917.jpg", width=500,use_container_width=True)
+    st.image("IPL-2020-player-performance-report-card-e1605804856917.jpg", width=500,use_container_width=True)
     st.title("📊 Player Performance")
 
     player_list = season_wise_runs['striker'].unique().tolist()
@@ -100,7 +100,7 @@ elif page == "📊 Player Performance":
 
 # Bowler Stats
 elif page == "🎯 Bowler Stats":
-    st.image("D:\IPL 2008 to 2023\IPL-2025-Complete-Bowlers-List-for-All-10-Teams.jpg", width=400,use_container_width=True)
+    st.image("IPL-2025-Complete-Bowlers-List-for-All-10-Teams.jpg", width=400,use_container_width=True)
     st.title("🎯 Bowler Statistics")
 
     bowler_list = wicket_player_season['bowler'].unique().tolist()
@@ -120,7 +120,7 @@ elif page == "🎯 Bowler Stats":
 
 # Team Performance
 elif page == "🏏 Team Performance":
-    st.image("D:\IPL 2008 to 2023\Ipl-timelime-2024.jpg", width=300,use_container_width=True)
+    st.image("Ipl-timelime-2024.jpg", width=300,use_container_width=True)
     st.title("🏏 Team Performance")
 
     team_list = pd.concat([df['team_1'], df['team_2']]).unique().tolist()
