@@ -8,7 +8,7 @@ st.set_page_config(page_title="🏏 IPL Analytics Dashboard", layout="wide")
 
 # Custom CSS for Background & Styling
 st.markdown(
-    
+    """
     <style>
         /* Background Image */
         .main {
@@ -38,8 +38,10 @@ st.markdown(
         }
 
     </style>
+    """,
     
     unsafe_allow_html=True
+    
 )
 
 # Function to load pickle files
