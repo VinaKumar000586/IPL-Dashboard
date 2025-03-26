@@ -64,7 +64,7 @@ page = st.sidebar.radio(
 
 # Season Analysis
 if page == "🏆 Season Analysis":
-    st.image("D:\IPL 2008 to 2023\IPL-winners-list-from-2008-to-2024-blog.png", width=300,use_container_width=True)
+    st.image("winner.jpg", width=300,use_container_width=True)
     st.title("🏆 IPL Season-Wise Analysis")
 
     season_winner_team = df.groupby('season').last()['match_winner'].reset_index()
